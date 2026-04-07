@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seatwork 1</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Account Login</h3>
+        
+        <details ontoggle="alert('TEST CREDENTIALS: \nUser: admin \nPass: 12345')">
+            <summary class="btn btn-sm btn-outline-secondary mb-3">View Login Help</summary>
+            <p class="small text-muted">Enter the credentials shown in the alert box.</p>
+        </details>
+
+        
+        <form>
+            <label for="user">Username</label>
+            <input type="text" class="form-control" id="user" name="user">
+            <br>
+            <label for="pass">Password</label>
+            <input type="text" class="form-control" id="pass" name="pass">
+            <br>
+            <p id="fb"></p>
+            <button type="button" class="btn btn-primary" onclick="SignIn()">Sign In</button>
+            <button type="button" class="btn btn-success" onclick="window.location.reload()">Refresh</button>
+        </form>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
